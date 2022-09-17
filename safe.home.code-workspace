@@ -1,0 +1,12 @@
+{
+  "folders": [
+	{
+		"name": "safe.home",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "safe.home",
+    "liveServer.settings.port": 5501
+  }
+}
