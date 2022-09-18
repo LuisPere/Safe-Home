@@ -10,28 +10,17 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
-      <h1 class="logo">Help Us Help Them</h1>
-      <ul class="nav-links">
-        <li class="active"><a href="#"></a>Home</li>
-        <li><a href="#"></a>Volunteers</li>
-        <li><a href="#"></a>Resources</li>
-        <li><a href="#"></a>About</li>
-        <li class="ctn"><a href="#"></a>Contact</li>
-      </ul>
-      <div class="mobile-nav">
-        <img src="./img/menu-btn.png" alt="" class="menu-btn" />
-        <h1 class="close-btn">X</h1>
-      </div>
-    </nav>
-
     <header>
-      <div class="header-content">
-        <h2>Help Give Someone A Home</h2>
-        <div class="line"></div>
-        <h1>SAFE HOME</h1>
-        <a href="#" class="ctn">Learn More</a>
-      </div>
+      <nav>
+        <ul>
+          <li id="logo"><a href="index.html">Safe Home</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="volunteer.html">VOLUNTEER</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- == Page Descriptions == -->
@@ -42,7 +31,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <img src="./img/img1.png" alt="" />
+          <img src="./img/img1.png" alt="Volunteers" />
           <h4>Volunteers</h4>
           <p>
             Every year, nearly 10,000 volunteers lend their hearts and hands to
@@ -52,7 +41,7 @@
           <a href="#" class="ctn">Learn More</a>
         </div>
         <div class="col">
-          <img src="./img/img2.png" alt="" />
+          <img src="./img/img2.png" alt="resources" />
           <h4>Resources</h4>
           <p>
             Here at safe home, we connect people who are homeless, or about to
@@ -63,8 +52,8 @@
       </div>
     </section>
 
-    <section class="explore">
-      <div class="explore-content">
+    <section class="aboutus">
+      <div class="aboutus-content">
         <h1>ABOUT US</h1>
         <div class="line"></div>
         <p>
@@ -77,7 +66,7 @@
       </div>
     </section>
 
-    <section class="tours">
+    <section class="getintouch">
       <div class="row">
         <div class="col content-col">
           <h1>Get In Touch</h1>
@@ -92,52 +81,44 @@
         </div>
         <div class="col image-col">
           <div class="image-gallery">
-            <img src="./img/img3.png" alt="" />
-            <img src="./img/img4.png" alt="" />
-            <img src="./img/img5.png" alt="" />
-            <img src="./img/img6.png" alt="" />
+            <img src="./img/img3.png" alt="homeless person" />
+            <img src="./img/img4.png" alt="group of homeless people" />
+            <img src="./img/img5.png" alt="homeless family" />
+            <img src="./img/img6.png" alt="homeless man eating" />
           </div>
         </div>
       </div>
     </section>
 
-    <
-    <section class="footer">
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="resources.html">RESOURCES</a></li>
-                <li><a href="volunteer.html">VOLUNTEER</a></li>
-            </ul>
-            <div id="socials">
-                <a href="https://facebook.com"><img src="img/facebook.png" alt="facebook logo"></a>
-                <a href="https://twitter.com"><img src="img/" alt="twitter logo"></a>
-                <a href="https://instagram.com"><img src="images/instagram.png" alt="instagram logo"></a>
-            </div>
-    
-            <div id="last">
-                <p>1101 Red Ventures Dr., Fort Mill, SC 29707  |  (555) 555-555  |  info@safehome.com</p>
-                <p>&copy; Safe Home 2022</p>
-            </div>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="resources.html">RESOURCES</a></li>
+          <li><a href="volunteer.html">VOLUNTEER</a></li>
+        </ul>
+        <div id="socials">
+          <a href="https://facebook.com"
+            ><img src="img/facebook.png" alt="facebook logo"
+          /></a>
+          <a href="https://twitter.com"
+            ><img src="img/twitter.png" alt="twitter logo"
+          /></a>
+          <a href="https://instagram.com"
+            ><img src="img/instagram.png" alt="instagram logo"
+          /></a>
+        </div>
 
-    <script>
-      const mobileNav = document.querySelector(".mobile-nav");
-      const menuBtn = document.querySelector(".menu-btn");
-      const navlinks = document.querySelector(".nav-links");
-      const closeBtn = document.querySelector(".close-btn");
-
-      mobileNav.addEventListener("click", (e) => {
-        navlinks.classList.toggle("mobile-menu");
-        if (e.target === menuBtn) {
-          menuBtn.replaceWith(closeBtn);
-          closeBtn.style.display = "block";
-        }
-        if (e.target === closeBtn) {
-          closeBtn.replaceWith(menuBtn);
-        }
-      });
-    </script>
+        <div id="last">
+          <p>
+            1101 Red Ventures Dr., Fort Mill, SC 29707 | (555) 555-555 |
+            info@safehome.com
+          </p>
+          <p>&copy; Safe Home 2022</p>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
